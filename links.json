@@ -16,15 +16,15 @@
   ],
   "links": [
     {
-      "title": "Nexora-V2",
+      "title": "Nexora",
       "url": "#",
       "category": "bots",
       "blurb": "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment and live server utilities.",
       "featured": true,
-      "preview": "assets/previews/nexora.png",
+      "preview": "assets/previews/nexora.svg",
       "type": "Discord Bot",
       "status": "In Development",
-      "visibility": "Private",
+      "visibility": "Public",
       "role": "Creator"
     },
     {
