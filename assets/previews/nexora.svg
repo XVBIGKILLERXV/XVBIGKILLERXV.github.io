@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <radialGradient id="g" cx="70%" cy="25%" r="80%">
+      <stop offset="0" stop-color="#6f25bd" stop-opacity=".65"/>
+      <stop offset=".45" stop-color="#281039" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#09050f"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+  </defs>
+  <rect width="1280" height="720" fill="#09050f"/>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <circle cx="890" cy="180" r="190" fill="#9b4dff" opacity=".13" filter="url(#blur)"/>
+  <g fill="none" stroke="#c49aff" opacity=".16">
+    <path d="M0 145H1280M0 290H1280M0 435H1280M0 580H1280"/>
+    <path d="M170 0V720M340 0V720M510 0V720M680 0V720M850 0V720M1020 0V720"/>
+  </g>
+  <text x="72" y="108" fill="#a995b8" font-family="monospace" font-size="22" letter-spacing="5">DISCORD BOT / IN DEVELOPMENT</text>
+  <text x="72" y="562" fill="#f4edf9" font-family="Georgia,serif" font-size="70">NEXORA</text>
+  <text x="72" y="615" fill="#c49aff" font-family="monospace" font-size="20" letter-spacing="4">BLAKE WALKER / SELECTED WORK</text>
+  <text x="1080" y="132" text-anchor="middle" fill="#f4edf9" opacity=".82" font-family="Georgia,serif" font-size="76">N</text>
+</svg>
