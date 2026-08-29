@@ -10,7 +10,7 @@
   // fetch fails. Mirrors the `featured` entries in links.json.
   const FALLBACK = [
     {
-      title: "Nexora",
+      title: "Nexora-V2",
       url: "#",
       blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment and live server utilities. ( WIP )",
     },
