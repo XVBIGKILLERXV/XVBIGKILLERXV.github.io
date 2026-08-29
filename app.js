@@ -8,28 +8,28 @@
 
   // Inline fallback so the page renders populated even on file:// or if the
   // fetch fails. Mirrors the `featured` entries in links.json.
-const FALLBACK = [
-  {
-    title: "Nexora-V2",
-    url: "https://github.com/XVBIGKILLERXV/Nexora-V2-Public",
-    blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment, music and live server utilities. Currently a private work in progress.",
-  },
-  {
-    title: "The Corrections Assistant Bot",
-    url: "https://discord.com/users/417191267546562560",
-    blurb: "Private Project — Creator of a purpose-built Discord assistant supporting corrections workflows, information access and community operations. Contact me for more information.",
-  },
-  {
-    title: "Corrections Control Center Bot",
-    url: "https://discord.com/users/417191267546562560",
-    blurb: "Private Project — Creator of a control-centre focused Discord bot for structured corrections operations, staff tooling and coordination. Contact me for more information.",
-  },
-  {
-    title: "Experiments",
-    url: "#",
-    blurb: "Small prototypes, visual experiments, interface concepts and ideas that do not fit neatly into one category.",
-  }
-];
+  const FALLBACK = [
+    {
+      title: "Nexora-V2",
+      url: "https://github.com/XVBIGKILLERXV/Nexora-V2",
+      blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment, music and live server utilities. Currently a private work in progress.",
+    },
+    {
+      title: "The Corrections Assistant Bot",
+      url: "https://discord.com/users/417191267546562560",
+      blurb: "Private Project — Creator of a purpose-built Discord assistant supporting corrections workflows, information access and community operations. Contact me for more information.",
+    },
+    {
+      title: "Corrections Control Center Bot",
+      url: "https://discord.com/users/417191267546562560",
+      blurb: "Private Project — Creator of a control-centre focused Discord bot for structured corrections operations, staff tooling and coordination. Contact me for more information.",
+    },
+    {
+      title: "Experiments",
+      url: "#",
+      blurb: "Small prototypes, visual experiments, interface concepts and ideas that do not fit neatly into one category.",
+    }
+  ];
 
   // Inline fallback for the sub-tagline bank, mirroring subtaglines.json, so the
   // phrase still appears on file:// or when the fetch fails.
