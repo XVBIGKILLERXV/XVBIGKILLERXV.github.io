@@ -11,17 +11,17 @@
   const FALLBACK = [
     {
       title: "Nexora-V2",
-      url: "#",
+      url: "https://github.com/XVBIGKILLERXV/Nexora-V2-Public",
       blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment and live server utilities. ( WIP )",
     },
     {
       title: "The Corrections Assistant Bot",
-      url: "#",
+      url: "https://discord.com/users/417191267546562560",
       blurb: "Creator — a purpose built Discord assistant supporting corrections workflows, highly customizable, information access and community operations.",
     },
     {
       title: "Corrections Control Center Bot",
-      url: "#",
+      url: "https://discord.com/users/417191267546562560",
       blurb: "Creator — a control centre focused Discord bot for structured corrections operations, highly customizable, staff tooling and coordination.",
     },
     {
