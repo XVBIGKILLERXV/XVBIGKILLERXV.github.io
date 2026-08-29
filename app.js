@@ -11,7 +11,7 @@
 const FALLBACK = [
   {
     title: "Nexora-V2",
-    url: "https://github.com/XVBIGKILLERXV/Nexora-V2",
+    url: "https://github.com/XVBIGKILLERXV/Nexora-V2-Public",
     blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment, music and live server utilities. Currently a private work in progress.",
   },
   {
