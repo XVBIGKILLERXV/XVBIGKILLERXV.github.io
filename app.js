@@ -11,18 +11,18 @@
   const FALLBACK = [
     {
       title: "Nexora-V2",
-      url: "https://github.com/XVBIGKILLERXV/Nexora-V2-Public",
-      blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment, music and live server utilities. Currently a private work in progress.",
+      url: "#",
+      blurb: "Multipurpose Discord bot covering moderation, administration, economy, tickets, entertainment and live server utilities. ( WIP )",
     },
     {
       title: "The Corrections Assistant Bot",
-      url: "https://discord.com/users/417191267546562560",
-      blurb: "Private Project — Creator of a purpose-built Discord assistant supporting corrections workflows, information access and community operations. Contact me for more information.",
+      url: "#",
+      blurb: "Creator — a purpose built Discord assistant supporting corrections workflows, highly customizable, information access and community operations.",
     },
     {
       title: "Corrections Control Center Bot",
-      url: "https://discord.com/users/417191267546562560",
-      blurb: "Private Project — Creator of a control-centre focused Discord bot for structured corrections operations, staff tooling and coordination. Contact me for more information.",
+      url: "#",
+      blurb: "Creator — a control centre focused Discord bot for structured corrections operations, highly customizable, staff tooling and coordination.",
     },
     {
       title: "Experiments",
@@ -47,6 +47,13 @@
   // pushes it, so leaving it in means the beacon reports itself every time the
   // site is touched — the one answer that says nothing about what's being built.
   const SELF_REPO = `${GH_USER}/${GH_USER}.github.io`.toLowerCase();
+
+  // Repositories that should never appear in the "currently working on" card.
+  // Keep the portfolio repo and the retired NexoraBot repo out of the picker.
+  const EXCLUDED_REPOS = new Set([
+    SELF_REPO,
+    'xvbigkillerxv/nexorabot'
+  ]);
 
   // How the current-project card is decided.
   //
@@ -162,7 +169,7 @@
       if (!e || e.type !== 'PushEvent') continue;
       const name = e.repo && e.repo.name;
       const at = Date.parse(e.created_at);
-      if (!name || !at || String(name).toLowerCase() === SELF_REPO) continue;
+      if (!name || !at || EXCLUDED_REPOS.has(String(name).toLowerCase())) continue;
 
       const ageDays = (now - at) / 86400000;
       if (ageDays < 0 || ageDays > ACTIVITY_WINDOW_DAYS) continue;
@@ -184,7 +191,10 @@
   // scripted burst and a slow manual one both register.
   function pickByPush(repos) {
     const sorted = repos
-      .filter((r) => r.pushed_at && String(r.full_name).toLowerCase() !== SELF_REPO)
+      .filter((r) =>
+        r.pushed_at &&
+        !EXCLUDED_REPOS.has(String(r.full_name).toLowerCase())
+      )
       .sort((a, b) => Date.parse(b.pushed_at) - Date.parse(a.pushed_at));
     if (!sorted.length) return null;
 
